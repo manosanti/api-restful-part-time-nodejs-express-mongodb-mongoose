@@ -19,3 +19,64 @@ Content-Type: application/json
     "price": 2500,
     "image": "https://conteudo.imguol.com.br/c/esporte/eb/2022/09/27/neymar-comemora-gol-marcado-pela-selecao-brasileira-contra-a-tunisia-1664308063053_v2_450x600.jpg"
 }
+
+### 
+POST http://localhost:3000/api/parties
+Content-Type: application/json
+
+{
+    "title": "Meu evento 2",
+    "author": "Matheus",
+    "description": "Uma festa de aniversário",
+    "budget": 20000,
+    "image": "https://conteudo.imguol.com.br/c/esporte/eb/2022/09/27/neymar-comemora-gol-marcado-pela-selecao-brasileira-contra-a-tunisia-1664308063053_v2_450x600.jpg",
+    "services": [
+        {
+            "name": "TESTE ATUALIZADO",
+            "description": "alguma descrição",
+            "price": 10200,
+            "image": "https://conteudo.imguol.com.br/c/esporte/eb/2022/09/27/neymar-comemora-gol-marcado-pela-selecao-brasileira-contra-a-tunisia-1664308063053_v2_450x600.jpg"
+        },
+        {
+            "name": "TESTE ATUALIZADO 2",
+            "description": "alguma descrição 2",
+            "price": 1020,
+            "image": "https://conteudo.imguol.com.br/c/esporte/eb/2022/09/27/neymar-comemora-gol-marcado-pela-selecao-brasileira-contra-a-tunisia-1664308063053_v2_450x600.jpg"
+        }
+    ]
+}
+
+###
+GET http://localhost:3000/api/parties
+
+###
+GET http://localhost:3000/api/parties/64346fe3f5115344622831f0
+
+###
+DELETE http://localhost:3000/api/parties/64346fe3f5115344622831f0
+
+###
+PUT http://localhost:3000/api/parties/64347051f511534462283204
+Content-Type: application/json
+
+{
+    "title": "Meu evento 2",
+    "author": "Matheus",
+    "description": "Uma festa de aniversário",
+    "budget": 20000,
+    "image": "https://conteudo.imguol.com.br/c/esporte/eb/2022/09/27/neymar-comemora-gol-marcado-pela-selecao-brasileira-contra-a-tunisia-1664308063053_v2_450x600.jpg",
+    "services": [
+        {
+            "name": "TESTE ATUALIZADO",
+            "description": "alguma descrição",
+            "price": 10200,
+            "image": "https://conteudo.imguol.com.br/c/esporte/eb/2022/09/27/neymar-comemora-gol-marcado-pela-selecao-brasileira-contra-a-tunisia-1664308063053_v2_450x600.jpg"
+        },
+        {
+            "name": "TESTE ATUALIZADO 2",
+            "description": "alguma descrição 2",
+            "price": 1020,
+            "image": "https://conteudo.imguol.com.br/c/esporte/eb/2022/09/27/neymar-comemora-gol-marcado-pela-selecao-brasileira-contra-a-tunisia-1664308063053_v2_450x600.jpg"
+        }
+    ]
+}
