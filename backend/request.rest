@@ -1,0 +1,21 @@
+POST http://localhost:3000/api/services
+
+###
+GET http://localhost:3000/api/services
+
+###
+GET http://localhost:3000/api/services/6431f6e4d1a74f45047a9d96
+
+###
+DELETE http://localhost:3000/api/services/6431f6e4d1a74f45047a9d96
+
+###
+PUT http://localhost:3000/api/services/6431f6e4d1a74f45047a9d96
+Content-Type: application/json
+
+{
+    "name": "TESTE ATUALIZADO",
+    "description": "alguma descrição",
+    "price": 2500,
+    "image": "https://conteudo.imguol.com.br/c/esporte/eb/2022/09/27/neymar-comemora-gol-marcado-pela-selecao-brasileira-contra-a-tunisia-1664308063053_v2_450x600.jpg"
+}
